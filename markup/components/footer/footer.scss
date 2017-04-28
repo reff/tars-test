@@ -1,0 +1,37 @@
+.footer{
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #777777;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+
+    &__footnotes{
+        flex-basis: 350px;
+    }
+
+    &__text{
+        flex-basis: 650px;
+    }
+
+    &__navigation{
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        line-height: 25px;
+    }
+
+        &__navigation-item{
+
+        }
+
+            &__navigation-link{
+                color: #fff;
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+}

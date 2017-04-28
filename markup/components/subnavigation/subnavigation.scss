@@ -1,0 +1,41 @@
+.subnavigation{
+
+    padding-left: 0;
+    margin: 0 0 30px 0;
+    list-style: none;
+    font-family: 'PT Sans', sans-serif;
+
+    &__item{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+        &__link{
+            color: #767676;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+            &__innerlinks{
+                font-size: 14px;
+                line-height: 20px;
+                list-style: disc;
+                margin-bottom: 10px;
+            }
+
+                &__innerlinks-item{
+                    color: #767676;
+                }
+
+                    &__innerlink{
+                        color: #767676;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                            color: #010101;
+                        }
+                    }
+
+}

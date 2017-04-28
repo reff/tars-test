@@ -1,0 +1,11 @@
+include ../../components/navigation/navigation.pug
+
+mixin footer(data)
+    .footer
+        .row.row--wrap
+            .row__cell.footer__footnotes © 2012–2013 ЗАО «Компания» #[br] info@name.ru
+            .row__cell.footer__text
+                ul.footer__navigation
+                    each item in footer.links
+                        li.footer__navigation-item
+                            a.footer__navigation-link(href=item.url) #{item.caption}

@@ -1,0 +1,6 @@
+mixin contactPhones(data)
+    if contactPhones
+        ul.contact-phones
+            each contact in contactPhones
+                li.contact-phones__item
+                    a.contact-phones__link(href=contact.url) #{contact.caption}

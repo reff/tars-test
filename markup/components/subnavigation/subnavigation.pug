@@ -1,0 +1,11 @@
+mixin subnavigation(data)
+
+    ul.subnavigation
+        each item in subnavigation
+            li.subnavigation__item
+                a.subnavigation__link(href=item.url) #{item.caption}
+                if item.innerlinks
+                    ul.subnavigation__innerlinks
+                        each subitem in item.innerlinks
+                            li.subnavigation__innerlinks-item
+                                a.subnavigation__innerlink(href=subitem.url) #{subitem.caption}

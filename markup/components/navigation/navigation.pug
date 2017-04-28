@@ -1,0 +1,5 @@
+mixin navigation(data)
+    ul.navigation__items
+        each item in navigation
+            li.navigation__item
+                a.navigation__link(href=item.url) #{item.caption}

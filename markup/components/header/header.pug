@@ -1,0 +1,16 @@
+include ../../components/navigation/navigation.pug
+include ../../components/contactPhones/contactPhones.pug
+
+mixin header(data)
+    .header
+        .row.row--wrap
+            .row__cell.header__branding
+                a(href="/")
+                    img(src="static/img/general/logo.png" alt="Название компании")
+            .row__cell.header__links
+                +contactPhones()
+                a.page-header__feedback-link(href="#") Обратная связь
+    .navigation
+        .row
+            nav.row__cell
+                +navigation()

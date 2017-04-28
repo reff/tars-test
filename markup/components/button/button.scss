@@ -1,0 +1,14 @@
+.button{
+
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover{
+        opacity: .8;
+    }
+
+    &__glyph{
+        padding: 5px;
+    }
+
+}

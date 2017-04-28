@@ -1,0 +1,28 @@
+.row{
+
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+
+    &--wrap{
+        flex-wrap: wrap;
+    }
+
+    &__cell{
+        padding: 10px;
+        box-sizing: border-box;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        &--fit{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &--right{
+            text-align: right;
+        }
+
+    }
+
+}

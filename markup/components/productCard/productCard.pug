@@ -1,0 +1,13 @@
+mixin productCard(data)
+    article.product-card
+        a.product-card__link(href=productCard.defaults.permalink title=productCard.defaults.title)
+            img.product-card__image(src=productCard.defaults.imageUrl alt=productCard.defaults.title)
+        h1.product-card__title
+            a.product-card__link(href=productCard.defaults.permalink title=productCard.defaults.title)
+                | #{productCard.defaults.title}
+        .row
+            .row__cell.row__cell--fit
+                .product-card__price #{productCard.defaults.price}
+            .row__cell.row__cell--fit.row__cell--right
+                a.product-card__buy-button(href="#" title="Добавить в корзину")
+                    img(src="%=static=%img/general/shopping-cart.png" alt="")

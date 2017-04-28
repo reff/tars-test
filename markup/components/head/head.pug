@@ -1,0 +1,19 @@
+mixin head(data)
+
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    title #{head.defaults.title}
+    meta(name="description", content=head.defaults.description)
+    meta(name="keywords", content=head.defaults.keywords)
+    meta(name="author", content=head.defaults.author)
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="format-detection", content="telephone=no")
+    meta(name="HandheldFriendly", content="true")
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css">
+
+    link(rel="icon" type="image/x-icon" href="favicon.ico")
+    script.
+        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)

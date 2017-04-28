@@ -1,0 +1,19 @@
+.main{
+
+    &__sidebar{
+        flex-basis: 220px;
+    }
+
+    &__content{
+        flex-basis: 780px;
+    }
+
+    &__bottomline{
+        font-size: 14px;
+        color: #767676;
+        border-top: 1px solid #767676;
+        padding-top: 10px;
+        margin: 20px 0 40px 0;
+    }
+
+}

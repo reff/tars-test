@@ -1,0 +1,31 @@
+.paginator{
+
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &__item{
+        display: inline-block;
+        font-size: 14px;
+    }
+
+        &__link{
+            padding: 5px 10px;
+            color: #767676;
+            text-decoration: none;
+            &:hover{
+                color: #444;
+                background-color: #eee;
+                border-radius: 4px;
+            }
+            &--current{
+                font-size: 18px;
+                color: #444;
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+        }
+
+}
