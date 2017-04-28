@@ -10,16 +10,5 @@ $(document).ready(
                 navContainer: '.slider__controls'
             }
         );
-
-        /*
-        $('.slider').each( function () {
-            let owl = $(this).find('.owl-carousel');
-            $(this).find('.slider__prev').on('click', function () {
-                owl.trigger('prev.owl.carousel');
-                return false;
-            });
-        } );
-        */
-
     }
 );

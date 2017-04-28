@@ -3,7 +3,7 @@ const data = {
         defaults: {
             title: "Product title",
             permalink: "#",
-            imageUrl: "http://placehold.it/210x210",
+            imageUrl: "%=static=%img/content/product-photo-01.png",
             price: "1 900 р."
         }
     }
